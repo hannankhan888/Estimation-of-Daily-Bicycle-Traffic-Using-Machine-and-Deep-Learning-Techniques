@@ -58,7 +58,7 @@ This project is split into multiple .ipynb files.
 Each file corresponds with one or more models that we tested on our data. (For example: the 'DNN_Route.ipynb' file contains the deep neural network models we created/evaluated with dimension-reduced data, normal data, scaled data, ...)  
 Within each hyperparameter search, we have included the 'Wall Time' which is the time it took for our computer to run that particular piece of code.
 
-
+## To View Code, Download The .html File And Open In Google Chrome
 
 ## Pre-trained Models
 
