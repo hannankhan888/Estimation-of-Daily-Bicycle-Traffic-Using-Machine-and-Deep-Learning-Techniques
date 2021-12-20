@@ -116,21 +116,4 @@ with open('models/cnn_45_scaled_one_conv_lyr_trial3271.pickle', 'rb') as f:
  cnn_model = torch.load('cnn_45_scaled_one_conv_lyr_trial3271.pickle')
 ```
 
-_**NOTE:**_ The CNN and DNN saved models were made using GPU.
-
-## Results
-
-Our model achieves the following performance on :
-
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
-
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
-
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
-
-
-## Contributing
-
->📋  Pick a licence and describe how to contribute to your code repository. 
+_**NOTE:**_ The CNN and DNN saved models were made using GPU, loading and use of these models will likely require a GPU as well.
