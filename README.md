@@ -15,28 +15,28 @@
 > <sup>4</sup>Graduate Student, Department of Computer Science Engineering, the University of Texas at Arlington, TX 76019,USA, Email: [hannan.khan@mavs.uta.edu](hannan.khan@mavs.uta.edu)
 
 ## Abstract
-Machine learning (ML) architecture has successfully characterized complex motorized  
-volumes and travel patterns; however, non-motorized traffic has given less attention to  
-ML techniques and relied on simple econometric models due to lack of data for  
-complex modeling. Recent advancement of smartphone-based location data that  
-collect and process large amounts of daily bicycle activities makes the use of machine  
-learning techniques for bicycle volume estimations possible and promising. This study  
-develops seven modeling techniques ranging from advanced techniques such as Deep  
-Neural Network (DNN), Shallow Neural Network (SNN), Random Forest (RF),  
-XGBoost, to conventional and simpler approaches such as Decision Tree (DT),  
-Negative Binomial (NB), and Multiple Linear Regression to estimate the Daily Bicycle  
-Traffic (DBT). This study uses 6,746 daily bicycle volumes collected from 178  
-permanent and short-term count locations from 2017 to 2019 in Portland, Oregon. A  
-total of 45 independent variables capturing anonymous bicycle user activities (Strava  
-count, bike share), built environments, motorized traffic, and sociodemographic  
-characteristics create comprehensive variable sets for predictive modeling. Two  
-variable dimension reduction techniques using principal component analysis and  
-random forest variable importance analysis ensure that the models are not overgeneralized  
-or over-fitted with a large variable set. The comparative analysis between  
-models shows that machine learning techniques of SNN and DNN produce higher  
-accuracies in estimating daily bicycle volumes. Results show that the DNN models  
-predict the DBT with a maximum mean absolute percentage error (APE) of 22% while  
-the conventional model (liner regression) shows 45% of APE.  
+Machine learning (ML) architecture has successfully characterized complex motorized
+volumes and travel patterns; however, non-motorized traffic has given less attention to
+ML techniques and relied on simple econometric models due to lack of data for
+complex modeling. Recent advancement of smartphone-based location data that
+collect and process large amounts of daily bicycle activities makes the use of machine
+learning techniques for bicycle volume estimations possible and promising. This study
+develops seven modeling techniques ranging from advanced techniques such as Deep
+Neural Network (DNN), Shallow Neural Network (SNN), Random Forest (RF),
+XGBoost, to conventional and simpler approaches such as Decision Tree (DT),
+Negative Binomial (NB), and Multiple Linear Regression to estimate the Daily Bicycle
+Traffic (DBT). This study uses 6,746 daily bicycle volumes collected from 178
+permanent and short-term count locations from 2017 to 2019 in Portland, Oregon. A
+total of 45 independent variables capturing anonymous bicycle user activities (Strava
+count, bike share), built environments, motorized traffic, and sociodemographic
+characteristics create comprehensive variable sets for predictive modeling. Two
+variable dimension reduction techniques using principal component analysis and
+random forest variable importance analysis ensure that the models are not overgeneralized
+or over-fitted with a large variable set. The comparative analysis between
+models shows that machine learning techniques of SNN and DNN produce higher
+accuracies in estimating daily bicycle volumes. Results show that the DNN models
+predict the DBT with a maximum mean absolute percentage error (APE) of 22% while
+the conventional model (liner regression) shows 45% of APE.
 
 ![Graphical Abstract](/images/graphical_abstract.png)
 
