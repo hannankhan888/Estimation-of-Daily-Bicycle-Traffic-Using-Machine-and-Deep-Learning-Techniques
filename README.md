@@ -92,7 +92,8 @@ Best trial until now:
     HL2_ac_fn: relu
     HL3_ac_fn: linear
 ```
-The model can then be created using either Keras or PyTorch:
+The model can then be created using either Keras or PyTorch:  
+_**Note:**_ In each model, the output layer has 1 node with a linear activation function.
 ```
 cnn_model = Sequential([
     layers.Conv1D(128, 5, activation='linear', input_shape=(X_scaled.shape[1], 1)),
