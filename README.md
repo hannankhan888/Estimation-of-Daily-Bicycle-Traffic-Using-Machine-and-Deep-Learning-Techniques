@@ -15,28 +15,28 @@
 > <sup>4</sup>Graduate Student, Department of Computer Science Engineering, the University of Texas at Arlington, TX 76019,USA, Email: [hannan.khan@mavs.uta.edu](hannan.khan@mavs.uta.edu)
 
 ## Abstract
-Machine learning (ML) architecture has successfully characterized complex motorized  
-volumes and travel patterns; however, non-motorized traffic has given less attention to  
-ML techniques and relied on simple econometric models due to lack of data for  
-complex modeling. Recent advancement of smartphone-based location data that  
-collect and process large amounts of daily bicycle activities makes the use of machine  
-learning techniques for bicycle volume estimations possible and promising. This study  
-develops seven modeling techniques ranging from advanced techniques such as Deep  
-Neural Network (DNN), Shallow Neural Network (SNN), Random Forest (RF),  
-XGBoost, to conventional and simpler approaches such as Decision Tree (DT),  
-Negative Binomial (NB), and Multiple Linear Regression to estimate the Daily Bicycle  
-Traffic (DBT). This study uses 6,746 daily bicycle volumes collected from 178  
-permanent and short-term count locations from 2017 to 2019 in Portland, Oregon. A  
-total of 45 independent variables capturing anonymous bicycle user activities (Strava  
-count, bike share), built environments, motorized traffic, and sociodemographic  
-characteristics create comprehensive variable sets for predictive modeling. Two  
-variable dimension reduction techniques using principal component analysis and  
-random forest variable importance analysis ensure that the models are not overgeneralized  
-or over-fitted with a large variable set. The comparative analysis between  
-models shows that machine learning techniques of SNN and DNN produce higher  
-accuracies in estimating daily bicycle volumes. Results show that the DNN models  
-predict the DBT with a maximum mean absolute percentage error (APE) of 22% while  
-the conventional model (liner regression) shows 45% of APE.  
+Machine learning (ML) architecture has successfully characterized complex motorized
+volumes and travel patterns; however, non-motorized traffic has given less attention to
+ML techniques and relied on simple econometric models due to lack of data for
+complex modeling. Recent advancement of smartphone-based location data that
+collect and process large amounts of daily bicycle activities makes the use of machine
+learning techniques for bicycle volume estimations possible and promising. This study
+develops seven modeling techniques ranging from advanced techniques such as Deep
+Neural Network (DNN), Shallow Neural Network (SNN), Random Forest (RF),
+XGBoost, to conventional and simpler approaches such as Decision Tree (DT),
+Negative Binomial (NB), and Multiple Linear Regression to estimate the Daily Bicycle
+Traffic (DBT). This study uses 6,746 daily bicycle volumes collected from 178
+permanent and short-term count locations from 2017 to 2019 in Portland, Oregon. A
+total of 45 independent variables capturing anonymous bicycle user activities (Strava
+count, bike share), built environments, motorized traffic, and sociodemographic
+characteristics create comprehensive variable sets for predictive modeling. Two
+variable dimension reduction techniques using principal component analysis and
+random forest variable importance analysis ensure that the models are not overgeneralized
+or over-fitted with a large variable set. The comparative analysis between
+models shows that machine learning techniques of SNN and DNN produce higher
+accuracies in estimating daily bicycle volumes. Results show that the DNN models
+predict the DBT with a maximum mean absolute percentage error (APE) of 22% while
+the conventional model (liner regression) shows 45% of APE.
 
 ![Graphical Abstract](/images/graphical_abstract.png)
 
@@ -92,7 +92,8 @@ Best trial until now:
     HL2_ac_fn: relu
     HL3_ac_fn: linear
 ```
-The model can then be created using either Keras or PyTorch:
+The model can then be created using either Keras or PyTorch:  
+_**Note:**_ In each model, the output layer has 1 node with a linear activation function.
 ```
 cnn_model = Sequential([
     layers.Conv1D(128, 5, activation='linear', input_shape=(X_scaled.shape[1], 1)),
@@ -116,21 +117,4 @@ with open('models/cnn_45_scaled_one_conv_lyr_trial3271.pickle', 'rb') as f:
  cnn_model = torch.load('cnn_45_scaled_one_conv_lyr_trial3271.pickle')
 ```
 
-_**NOTE:**_ The CNN and DNN saved models were made using GPU.
-
-## Results
-
-Our model achieves the following performance on :
-
-### [Image Classification on ImageNet](https://paperswithcode.com/sota/image-classification-on-imagenet)
-
-| Model name         | Top 1 Accuracy  | Top 5 Accuracy |
-| ------------------ |---------------- | -------------- |
-| My awesome model   |     85%         |      95%       |
-
->📋  Include a table of results from your paper, and link back to the leaderboard for clarity and context. If your main result is a figure, include that figure and link to the command or notebook to reproduce it. 
-
-
-## Contributing
-
->📋  Pick a licence and describe how to contribute to your code repository. 
+_**NOTE:**_ The CNN and DNN saved models were made using GPU, loading and use of these models will likely require a GPU as well.
