@@ -59,6 +59,7 @@ Each file corresponds with one or more models that we tested on our data. (For e
 Within each hyperparameter search, we have included the 'Wall Time' which is the time it took for our computer to run that particular piece of code.
 
 ## To View Code, Download The .html File And Open In Google Chrome
+_**NOTE:**_ The code file titled 'Estimation-of-Daily-Bicycle-Traffic-Using-Machine-and-Deep-Learning-Techniques.html' contains the summary of **all** models.
 
 ## Pre-trained Models
 
