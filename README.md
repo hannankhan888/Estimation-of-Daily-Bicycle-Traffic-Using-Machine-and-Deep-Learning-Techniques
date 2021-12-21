@@ -21,7 +21,7 @@ ML techniques and relied on simple econometric models due to lack of data for
 complex modeling. Recent advancement of smartphone-based location data that
 collect and process large amounts of daily bicycle activities makes the use of machine
 learning techniques for bicycle volume estimations possible and promising. This study
-develops seven modeling techniques ranging from advanced techniques such as Deep
+develops seven modeling techniques ranging from advanced techniques such as Convolutional Neural Network (CNN), Deep
 Neural Network (DNN), Shallow Neural Network (SNN), Random Forest (RF),
 XGBoost, to conventional and simpler approaches such as Decision Tree (DT),
 Negative Binomial (NB), and Multiple Linear Regression to estimate the Daily Bicycle
