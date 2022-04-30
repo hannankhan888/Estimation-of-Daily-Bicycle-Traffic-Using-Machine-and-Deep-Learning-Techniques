@@ -14,6 +14,9 @@
 >
 > <sup>4</sup>Graduate Student, Department of Computer Science Engineering, the University of Texas at Arlington, TX 76019,USA, Email: [hannan.khan@mavs.uta.edu](hannan.khan@mavs.uta.edu)
 
+This repository is the official implementation of [Estimation of daily bicycle traffic using machine and deep learning techniques](https://doi.org/10.1007/s11116-022-10290-z).  
+Poster presented at [TRBAM 2022](https://annualmeeting.mytrb.org/OnlineProgram/Details/17594).
+ 
 ## Abstract
 Machine learning (ML) architecture has successfully characterized complex motorized
 volumes and travel patterns; however, non-motorized traffic has given less attention to
